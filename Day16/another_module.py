@@ -1,0 +1,1 @@
+another_variable = "This is another variable from another_module."
