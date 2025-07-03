@@ -1,5 +1,5 @@
-from turtle import Turtle
-
+from turtle import Turtle, Screen
+screen = Screen()
 UP = 90
 DOWN = 270
 LEFT = 180
@@ -48,4 +48,14 @@ class Snake:
         # Move the snake right
         if self.head.heading() != LEFT:
             self.head.setheading(RIGHT)
+    
+    def extend(self):
+        # Add a new segment to the snake without showing in the screen
+        # invisible first next visible
+        segment = Turtle()
+        segment.goto(self.snake_body[-1].position())
+        segment.color("white")
+        segment.shape("square")
+        segment.penup()
+        self.snake_body.append(segment)
     
