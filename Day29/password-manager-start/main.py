@@ -6,7 +6,6 @@ import string
 import pyperclip
 
 # ---------------------------- PASSWORD GENERATOR ------------------------------- #
-# password generator
 
 def generate_password():
     letters = list(string.ascii_letters)
@@ -39,6 +38,7 @@ def generate_password():
 
 
 # ---------------------------- SAVE PASSWORD ------------------------------- #
+
 def save_password():
     website = website_entry.get()
     email = email_entry.get()
@@ -70,6 +70,8 @@ def save_password():
     email_entry.delete(0, tk.END)
     password_entry.delete(0, tk.END)
     messagebox.showinfo(title="Success", message="Password saved successfully!")
+
+
 # ---------------------------- UI SETUP ------------------------------- #
 
 window = tk.Tk()
