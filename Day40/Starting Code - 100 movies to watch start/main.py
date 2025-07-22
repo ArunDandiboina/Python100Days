@@ -18,7 +18,7 @@ else:
     movie_titles = [heading.getText() for heading in headings]
     
     with open("movies.txt", "w", encoding="utf-8") as file:
-        for n in range(len(movie_titles) - 1, 0, -1):
+        for n in range(len(movie_titles) - 1, -1, -1):
             file.write(f"{movie_titles[n]}\n")
     print("Movie titles have been successfully written to movies.txt.")
     
