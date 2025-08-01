@@ -1,6 +1,8 @@
-from turtle import Turtle
+import turtle
 
-t = Turtle()
+t = turtle.Turtle()
+screen = turtle.Screen()
+
 t.color("blue")
 t.shape("turtle")
 
@@ -12,4 +14,4 @@ for x in range(10):
 
 
 # end
-t.screen.mainloop()
+screen.mainloop()
