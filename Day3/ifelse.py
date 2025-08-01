@@ -25,7 +25,7 @@ if height >= 120:
         print("Adult ticket: $12")
         bill = 12
     
-    want_photo = input("Do you want a photo? yes or no");
+    want_photo = input("Do you want a photo? yes or no ");
     if (want_photo == "yes"):
             bill += 3
     print(f"Your final bill is: ${bill}")        
