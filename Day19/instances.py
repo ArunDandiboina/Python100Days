@@ -13,7 +13,9 @@ colors = ["red", "blue", "green", "yellow", "purple"]
 turtles = []
 
 # input - allow user to select a color from colors
-text = screen.textinput("Choose a color", "Enter a color (red, blue, green, yellow, purple):")
+text = ''
+while text not in colors:
+    text = screen.textinput("Choose a color", "Enter a color (red, blue, green, yellow, purple):")
 # print(text)
 end = turtle.Turtle()
 end.hideturtle()
