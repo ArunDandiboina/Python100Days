@@ -6,6 +6,7 @@ directions = [0, 90, 180, 270]
 
 turtle.colormode(255)  # set color mode to 255 for RGB colors
 t = turtle.Turtle()
+t.hideturtle()  # hide the turtle
 t.pensize(15)
 t.speed("fastest")  # fastest speed for turtle
 
